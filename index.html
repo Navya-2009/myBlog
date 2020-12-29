@@ -1,0 +1,175 @@
+<html>
+  <head>
+    <title>CaseStudy</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Monoton&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+
+    <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/webcamjs/1.0.26/webcam.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="Case.css">
+  </head>
+
+  <body>
+
+    <div class="col-xs-12 ">
+
+        <h2 id="heading">Image Identification App  
+
+           <img id="img" src="cases.png">
+        </h2>
+      </div>
+
+      <br>
+
+      <ol>
+        <div class="text_image_and_result">
+          <li>
+            <b id="test">Test Image - </b>
+            <img  style="width: 250px; height: 365px;" src="shoes.jpg" class="img-responsive">
+          </li>
+          <h5 id="op">Output On <b>Wolfram Project</b> -
+            <span style="color: white; font-weight: bold;">Shoe</span>
+          </h5>
+          <h5 id="op">Output On <b> Mobilenet Model</b> -
+            <span></span>
+          </h5>
+          <div class="mini_result col-sm-6 col-xs-12">
+            <h4 id="r">Result - </h4>
+            <hr style="border-top: 3px solid black;">
+            <h4></h4>
+          </div>
+        </div>
+
+        <br><br><br><br><br><br>
+        <hr style="border-top: 3px solid white;">
+        <br>
+
+        <div class="text_image_and_result">
+          <li>
+            <b id="test">Test Image - </b>
+            <img  style="width: 250px; height: 315px;" src="glass.jpg" class="img-responsive">
+          </li>
+          <h5 id="op">Output On <b>Wolfram Project</b> -
+            <span style="color: white; font-weight: bold;">Liqueur Glass</span>
+          </h5>
+          <h5 id="op">Output On <b> Mobilenet Model</b> -
+            <span></span>
+          </h5>
+          <div class="mini_result col-sm-6 col-xs-12">
+            <h4 id="r">Result - </h4>
+            <hr style="border-top: 3px solid white;">
+            <h4></h4>
+          </div>
+        </div>
+
+        <br><br><br><br><br><br>
+        <hr style="border-top: 3px solid white;">
+        <br>
+
+        <div class="text_image_and_result">
+          <li>
+            <b id="test">Test Image - </b>
+            <img  style="width: 250px; height: 250px;" src="pen.jpg" class="img-responsive">
+          </li>
+          <h5 id="op">Output On <b>Wolfram Project</b> -
+            <span style="color: white; font-weight: bold;">Ballpoint Pen</span>
+          </h5>
+          <h5 id="op">Output On <b> Mobilenet Model</b> -
+            <span style="color: white; font-weight: bold;"></span>
+          </h5>
+          <div class="mini_result col-sm-6 col-xs-12">
+            <h4 id="r">Result - </h4>
+            <hr style="border-top: 3px solid white;">
+            <h4></h4>
+          </div>
+        </div>
+
+        <br><br><br><br><br><br>
+        <hr style="border-top: 3px solid white;">
+        <br>
+
+        <div class="text_image_and_result">
+          <li>
+            <b id="test">Test Image - </b>
+            <img  style="width: 250px; height: 250px;" src="ring.jpg" class="img-responsive">
+          </li>
+          <h5 id="op">Output On <b>Wolfram Project</b> -
+            <span style="color: white; font-weight: bold;">Seashell</span>
+          </h5>
+          <h5 id="op">Output On <b> Mobilenet Model</b> -
+            <span></span>
+          </h5>
+          <div class="mini_result col-sm-6 col-xs-12">
+            <h4 id="r">Result - </h4>
+            <hr style="border-top: 3px solid white;">
+            <h4></h4>
+          </div>
+        </div>
+
+        <br><br><br><br><br><br>
+        <hr style="border-top: 3px solid white;">
+        <br>
+
+        <div class="text_image_and_result">
+          <li>
+            <b id="test">Test Image - </b>
+            <img  style="width: 250px; height: 250px;" src="coaster.jpg" class="img-responsive">
+          </li>
+          <h5 id="op">Output On <b>Wolfram Project</b> -
+            <span style="color: white; font-weight: bold;">Freewheel</span>
+          </h5>
+          <h5 id="op">Output On <b> Mobilenet Model</b> -
+            <span></span>
+          </h5>
+          <div class="mini_result col-sm-6 col-xs-12">
+            <h4 id="r">Result - </h4>
+            <hr style="border-top: 3px solid white;">
+            <h4></h4>
+          </div>
+        </div>
+
+        <br><br><br><br><br><br>
+        <hr style="border-top: 3px solid white;">
+        <br>
+
+        <div class="text_image_and_result">
+          <li>
+            <b id="test">Test Image - </b>
+            <img  style="width: 250px; height: 300px;" src="bottle.jpg" class="img-responsive">
+          </li>
+          <h5 id="op">Output On <b>Wolfram Project</b> -
+            <span style="color: white; font-weight: bold;">Substance</span>
+          </h5>
+          <h5 id="op">Output On <b> Mobilenet Model</b> -
+            <span></span>
+          </h5>
+          <div class="mini_result col-sm-6 col-xs-12">
+            <h4 id="r">Result - </h4>
+            <hr style="border-top: 3px solid white;">
+            <h4></h4>
+          </div>
+        </div>
+        <br><br><br><br><br><br>
+        <hr style="border-top: 3px solid white;">
+        <br>
+      </ol>
+
+      <div class="col-xs-12 col-sm-12 footer_div">
+
+        <h4>
+          <img style=" width: 100px;" src="bulb.gif">
+        </h4>
+      </div>
+      <br><br><br>
+      <div class="copyrightfooter">
+        Developed By Navya
+      </div>
+
+  </body>
